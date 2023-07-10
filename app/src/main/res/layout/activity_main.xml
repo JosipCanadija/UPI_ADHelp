@@ -30,7 +30,8 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mojTimer" />
+        app:layout_constraintTop_toBottomOf="@+id/mojTimer"
+        android:backgroundTint="#9e492e"/>
 
     <EditText
         android:id="@+id/task"
@@ -66,6 +67,8 @@
                 android:layout_weight="1"
                 android:padding="15dp"
                 android:text="@string/Text_Scroll1"
+                android:textColor="#9e492e"
+                android:textStyle="bold"
                 android:textSize="25sp" />
 
             <TextView
@@ -75,6 +78,8 @@
                 android:layout_weight="1"
                 android:padding="15dp"
                 android:text="@string/Text_Scroll2"
+                android:textColor="#9e492e"
+                android:textStyle="bold"
                 android:textSize="25sp" />
 
             <TextView
@@ -84,6 +89,8 @@
                 android:layout_weight="1"
                 android:padding="15dp"
                 android:text="@string/Text_Scroll3"
+                android:textStyle="bold"
+                android:textColor="#9e492e"
                 android:textSize="25sp" />
         </LinearLayout>
     </HorizontalScrollView>
