@@ -7,6 +7,23 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView4"
+        android:layout_width="335dp"
+        android:layout_height="102dp"
+        android:layout_weight="1"
+        android:padding="15dp"
+        android:text="ADHelp"
+        android:gravity="center"
+        android:textColor="#9e492e"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mojTimer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        app:layout_constraintVertical_bias="0.268" />
+
+    <TextView
         android:id="@+id/mojTimer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
