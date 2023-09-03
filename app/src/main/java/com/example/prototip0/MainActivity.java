@@ -30,7 +30,7 @@ import java.text.NumberFormat;
 public class MainActivity extends AppCompatActivity {
     TextView textView;
     Button button;
-    EditText task;
+    Button addButton;
     public int count;
 
     @Override
@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         textView = findViewById (R.id.mojTimer);
         button= (Button) findViewById(R.id.button2);
-        task = (EditText) findViewById(R.id.task);
         button.setOnClickListener(new View.OnClickListener()
         {
             @Override
