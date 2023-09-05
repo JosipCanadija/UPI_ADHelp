@@ -26,7 +26,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Task"
-                    android:textColor="@android:color/holo_purple"
+                    android:textColor="#9e492e"
                     android:textFontWeight="1000"
                     android:textSize="30dp"/>
 
@@ -36,6 +36,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:text="Delete"
+                    android:backgroundTint="#9e492e"
                     android:layout_alignParentRight="true" />
             </RelativeLayout>
 

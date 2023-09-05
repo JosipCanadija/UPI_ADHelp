@@ -11,7 +11,6 @@
         android:layout_width="335dp"
         android:layout_height="102dp"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
         android:layout_weight="1"
         android:gravity="center"
         android:padding="15dp"
@@ -19,7 +18,6 @@
         android:textColor="#9e492e"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mojTimer" />
@@ -29,29 +27,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="128dp"
+        android:layout_marginTop="300dp"
         android:text="@string/timer_time"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="60sp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
         android:backgroundTint="#9e492e"
         android:text="@string/start_timer"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/addButton"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/addButton" />
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:contentDescription="Description"
@@ -59,7 +60,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="0dp">
+        tools:layout_editor_absoluteX="-38dp">
 
         <LinearLayout
             android:id="@+id/container"
@@ -68,14 +69,25 @@
             android:orientation="vertical"></LinearLayout>
     </ScrollView>
 
+    <EditText
+        android:layout_width="223dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="16dp"
+        android:text="Write your task: "
+        app:layout_constraintEnd_toEndOf="@+id/scrollView2"
+        app:layout_constraintStart_toStartOf="@+id/scrollView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"></EditText>
+
     <Button
         android:id="@+id/addButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
-        android:text="Add"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Add A Message"
+        android:textStyle="bold"
+        android:backgroundTint="#9e492e"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
 
